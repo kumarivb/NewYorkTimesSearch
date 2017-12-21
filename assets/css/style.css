@@ -1,8 +1,19 @@
 #wrapper{
-	
+	margin: 20px;
+
 }
 
 .jumbotron{
 	text-align: center;
 	font-weight: bolder;
+
+}
+
+#topArticles{
+	margin-top: 20px;
+}
+
+.card-header{
+	background-color: #20315A;
+	color: white;
 }

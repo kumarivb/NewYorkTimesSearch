@@ -2,48 +2,59 @@
 <html>
 <head>
 	<title>New York Times Search</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="wrapper">
-	<div class="jumbotron jumbotron-fluid" style="background-color: #20315A;">
+	<div class=" jumbotron jumbotron-fluid" style="background-color: #20315A;">
 	  <div class="container">
 	    <h1 class="display-3" style="color: white">New York Times Search</h1>
 	    <p class="lead"></p>
 	  </div>
 	</div>
 
+	<div class="card">
+		<h4 class="card-header">Search Parameters</h4>
 	<form>
 	  <div class="form-group">
-	    <label for="exampleFormControlInput1">Email address</label>
+	    <label for="exampleFormControlInput1">Search Term</label>
+	    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="John F Kennedy">
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleFormControlInput1">Search Term</label>
 	    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
 	  </div>
 	  <div class="form-group">
-	    <label for="exampleFormControlSelect1">Example select</label>
+	    <label for="exampleFormControlSelect1">Number of Records to Return</label>
 	    <select class="form-control" id="exampleFormControlSelect1">
 	      <option>1</option>
-	      <option>2</option>
-	      <option>3</option>
-	      <option>4</option>
 	      <option>5</option>
+	      <option>10</option>
 	    </select>
 	  </div>
 	  <div class="form-group">
-	    <label for="exampleFormControlSelect2">Example multiple select</label>
-	    <select multiple class="form-control" id="exampleFormControlSelect2">
-	      <option>1</option>
-	      <option>2</option>
-	      <option>3</option>
-	      <option>4</option>
-	      <option>5</option>
-	    </select>
+	    <label for="exampleFormControlInput1">End Year</label>
+	    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="John F Kennedy">
 	  </div>
-	  <div class="form-group">
-	    <label for="exampleFormControlTextarea1">Example textarea</label>
-	    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-	  </div>
+	 <button type="submit" class="btn btn-primary">Submit</button> 
+	 <button type="submit" class="btn btn-primary">Clear Results</button> 
 	</form>
+	</div>
+	
+<div class="card" id="topArticles">
+  <div class="card-header">
+    Top Articles
+  </div>
+  <div class="card-body">
+
+  </div>
 </div>
+
+</div>
+
+<script type="text/javascript" src="assets/javascript/nySearch.js"></script>
 </body>
 </html>
